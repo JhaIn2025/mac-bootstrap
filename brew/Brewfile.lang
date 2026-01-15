@@ -1,0 +1,16 @@
+tap "homebrew/core"
+tap "leoafarias/fvm"
+
+# 语言版本管理
+brew "fnm"       # Node
+brew "pyenv"     # Python
+brew "rbenv"     # Ruby
+
+# Flutter
+brew "fvm"
+
+# Go
+brew "go"
+
+# Java（只留一个）
+brew "temurin@25"

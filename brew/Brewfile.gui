@@ -1,0 +1,23 @@
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+# === 开发 & 日常 ===
+cask "visual-studio-code"
+cask "iterm2"
+cask "google-chrome"
+cask "raycast"
+cask "sourcetree"
+
+# === 会议 / 通讯 ===
+cask "zoom"
+cask "telegram"
+
+# === 文件传输 ===
+cask "filezilla"
+
+# === 字体 ===
+font "font-jetbrains-mono"
+font "font-monaspace"
+
+# Android
+cask "android-studio"
