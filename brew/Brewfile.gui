@@ -1,6 +1,9 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
+# === Remote Desktop ===
+cask "nomachine"
+
 # === 开发 & 日常 ===
 cask "visual-studio-code"
 cask "iterm2"
