@@ -1,6 +1,24 @@
 #!/bin/bash
 set -e
 
+echo "==> Checking Homebrew"
+
+if ! command -v brew >/dev/null 2>&1; then
+  echo "Homebrew not found. Installing Homebrew..."
+
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  # Apple Silicon / Intel 兼容处理
+  if [[ -d "/opt/homebrew/bin" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ -d "/usr/local/bin" ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+else
+  echo "Homebrew already installed"
+fi
+
+
 echo "==> Checking Xcode Command Line Tools"
 if ! xcode-select -p &>/dev/null; then
   echo "Xcode Command Line Tools not found."
