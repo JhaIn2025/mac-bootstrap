@@ -1,26 +1,21 @@
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
+#!/bin/bash
+set -e
 
-# === Remote Desktop ===
-cask "nomachine"
+echo "==> Installing GUI applications via Homebrew Cask"
 
-# === 开发 & 日常 ===
-cask "visual-studio-code"
-cask "iterm2"
-cask "google-chrome"
-cask "raycast"
-cask "sourcetree"
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 
-# === 会议 / 通讯 ===
-cask "zoom"
-cask "telegram"
+brew install --cask nomachine
+brew install --cask visual-studio-code
+brew install --cask iterm2
+brew install --cask google-chrome
+brew install --cask raycast
+brew install --cask sourcetree
+brew install --cask zoom
+brew install --cask telegram
+brew install --cask filezilla
+brew install --cask font-jetbrains-mono
+brew install --cask font-monaspace
 
-# === 文件传输 ===
-cask "filezilla"
-
-# === 字体 ===
-font "font-jetbrains-mono"
-font "font-monaspace"
-
-# Android
-cask "android-studio"
+echo "==> GUI installation finished"

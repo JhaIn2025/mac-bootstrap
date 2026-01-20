@@ -1,6 +1,5 @@
 tap "homebrew/core"
 
-# 基础工具
 brew "git"
 brew "gh"
 brew "rsync"
@@ -10,7 +9,6 @@ brew "tree"
 brew "jq"
 brew "yq"
 
-# 搜索 & 终端效率
 brew "ripgrep"
 brew "fd"
 brew "fzf"
@@ -18,12 +16,9 @@ brew "tmux"
 brew "neovim"
 brew "htop"
 
-# 容器 & 云
-brew "docker"        # CLI only
+brew "docker"
 brew "kubectl"
 brew "helm"
 brew "terraform"
-
-# 网络 / 调试
 brew "httpie"
 brew "nmap"
